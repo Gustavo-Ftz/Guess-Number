@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 710px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 710px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#container {
+    margin-top: 50px;
+}
+
+.formItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#userNumber {
+    margin-top: 5px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    max-width: 200px;
+    text-align: center;
+}
+
+button {
+    margin-top: 30px;
+    width: 90px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 223);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer > p > a {
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    #userNumber {
+        font-size: 12px;
+        width: 130px;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    #result {
+        font-size: 12px;
+    }
+}

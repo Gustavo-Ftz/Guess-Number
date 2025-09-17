@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Adivinhe o número</h1>
+        <h2>Adivinhe o número aleatório entre 0 e 10</h2>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="formItems">
+                <label for="userNumber">Digite um número: </label>
+                <input type="number" id="userNumber">
+            </div>
+
+            <div class="formItems">
+                <button onclick="guessNumber()">Chutar</button>
+                <span id="result"></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Site criado por <a href="https://github.com/Gustavo-Ftz" target="_blank">Gustavo Feitoza</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
